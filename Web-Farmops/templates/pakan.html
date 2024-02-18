@@ -23,55 +23,49 @@
             <h2>MONITORING</h2>
         </div>
 
-        <a href="/daya"><div class="daya">
-            <P>DAYA</P>
-        </div></a>
-        
-        <a href="/suhu"><div class="suhu">
-            <p>SUHU</p>
-        </div></a>
+        <a href="/daya">
+            <div class="daya">
+                <P>DAYA</P>
+            </div>
+        </a>
+
+        <a href="/suhu">
+            <div class="suhu">
+                <p>SUHU</p>
+            </div>
+        </a>
 
         <div class="widget">
             <div id="widgetBox">
-                <iframe class="item" width="152" height="152px" frameborder="0" 
-                src="https://stem.ubidots.com/app/dashboards/public/widget/eZQDrBt5gdQIZvybAA7zY2jafBuguOyRDBHB-NXaVx0?embed=true"></iframe>
-                <iframe class="item" width="152" height="152px" frameborder="0" 
-                src="https://stem.ubidots.com/app/dashboards/public/widget/P23ruZTwx9zaW8-G5Tro-4Hv0-9-PA-BXKvgc3C7xBw?embed=true"></iframe>
+                <iframe class="item" width="152" height="152px" frameborder="0"
+                    src="https://stem.ubidots.com/app/dashboards/public/widget/eZQDrBt5gdQIZvybAA7zY2jafBuguOyRDBHB-NXaVx0?embed=true"></iframe>
+                <iframe class="item" width="152" height="152px" frameborder="0"
+                    src="https://stem.ubidots.com/app/dashboards/public/widget/P23ruZTwx9zaW8-G5Tro-4Hv0-9-PA-BXKvgc3C7xBw?embed=true"></iframe>
             </div>
         </div>
-        
+
         <div class="boxLabel">
             <div class="label_1">
-                <p>Pakan 1</p>  
+                <p>Pakan 1</p>
             </div>
 
             <div class="label_2">
-                <p>Pakan 2</p>  
-            </div>
-            
-            <div class="label_3">
-                <p>Pakan 3</p>  
+                <p>Pakan 2</p>
             </div>
 
         </div>
-        <div > <form method="post">
-            <div class="boxInput">
-                <div><input class="input" type="time" name="jamPakan" value={{jamPakan}} /> </div>
-                <div><input class="input" type="time" name="jamPakan2" value={{jamPakan2}} /></div>
-                <div><input class="input" type="time" name="jamPakan3" value={{jamPakan3}} /></div>
-            </div> 
-            <input class="submit" type="submit" value="OK"> </input>
-        </form>
+        <div>
+            <form method="POST">
+                <div><input class="input1" type="time" name="jamPakan1" value={{feeding_schedule_1}} /></div>
+                <div><input class="input2" type="time" name="jamPakan2" value={{feeding_schedule_2}} /></div>
+                <input class="submit" type="submit" value="Simpan"> </input>
+            </form>
         </div>
-
-        
 
         <div>
-            <img class="logo" src="{{ url_for('static',filename='img/logo.svg')}}" id="logo" width="80px"/>
+            <img class="logo" src="{{ url_for('static',filename='img/logo.svg')}}" id="logo" width="80px" />
         </div>
 
-        
-        
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">

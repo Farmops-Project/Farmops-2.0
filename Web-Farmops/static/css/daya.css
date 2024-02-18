@@ -8,10 +8,68 @@
     height: 640px;
 
     background: #D1BE9C;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 290px;
+    top: 30px;
+}
+
+nav {
+    margin: auto;
+    height: 80px;
+    width: 360px;
+}
+
+ul {
+    position: absolute;
+    width: 140px;
+    height: 150px;
+    margin: 0px;
+    padding-top: 60px;
+    padding-left: 36.88px;
+    padding-bottom: 36px;
+
+    border-radius: 0px 0px 20px 0px;
+    background: #F2E8CF;
+    top: -100%;
+    left: 0px;
+    transition: all .5s;
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav ul li {
+    line-height: 30px;
+}
+
+nav ul li a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    color: #5A3F2B;
+}
+
+#check:checked~ul {
+    top: 0px;
 }
 
 .pakan {
-
     position: absolute;
     width: 100px;
     height: 40px;
@@ -20,7 +78,6 @@
 
     background: #F9EAE1;
     border-radius: 25px;
-    
 }
 
 .pakan p {
@@ -44,11 +101,6 @@
 
     color: #5A3F2B  ;
 }
-
-.item{
-    border-radius: 10px;
-}
-
 
 .suhu {
     position: absolute;
@@ -83,29 +135,6 @@
     color: #5A3F2B;
 }
 
-.sistem h2 { 
-    position: absolute;
-    width: 198px;
-    height: 21px;
-    left: 115px;
-    top: 166px;
-    margin: 0px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
-    /* or 27px */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #5A3F2B;
-    
-}
-
 .daya {
     position: absolute;
     width: 100px;
@@ -137,6 +166,33 @@
     align-items: center;
 
     color: #F9EAE1;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.sistem h2 { 
+    position: absolute;
+    width: 198px;
+    height: 21px;
+    left: 115px;
+    top: 166px;
+    margin: 0px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #5A3F2B;
+    
 }
 
 .widget {
@@ -202,7 +258,6 @@
     color: #5A3F2B;
 }
 
-
 .boxLabel {
     position: absolute;
     height: 88px;
@@ -249,46 +304,6 @@
     color: #5A3F2B;
 }
 
-.input {
-    position: absolute;
-    width: 140px;
-    height: 32px;
-    right: 0px;
-
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    /* or 24px */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #D1BE9C;
-
-    background: #5A3F2B;
-    border-radius: 25px;
-    border: 0px;
-}
-
-
-.logo {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 290px;
-    top: 30px;
-}
-
-nav {
-    margin: auto;
-    height: 80px;
-    width: 360px;
-}
-
 .checkbtn {
     position: absolute;
     color: white;
@@ -299,20 +314,6 @@ nav {
 
 #check {
     display: none;
-}
-
-.tombol{
-    position: absolute;
-    left: 2px;
-    top: 22px;
-}
-
-
-.power{
-    position: absolute;
-    left: 50px;
-    top: 0px;
-    bottom: 100px;
 }
 
 .pln h2{
@@ -359,50 +360,21 @@ nav {
     color: #5A3F2B;
 }
 
-
-ul {
+.tombol{
     position: absolute;
-    width: 140px;
-    height: 150px;
-    margin: 0px;
-    padding-top: 60px;
-    padding-left: 36.88px;
-    padding-bottom: 36px;
-
-    border-radius: 0px 0px 20px 0px;
-    background: #F2E8CF;
-    top: -100%;
-    left: 0px;
-    transition: all .5s;
-
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    left: 2px;
+    top: 22px;
 }
 
-nav ul li {
-    line-height: 30px;
-}
 
-nav ul li a {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    /* or 24px */
-
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-
-    color: #5A3F2B;
-}
-
-#check:checked~ul {
+.power{
+    position: absolute;
+    left: 50px;
     top: 0px;
+    bottom: 100px;
 }
+
+
 
 .custom-button {
     border: none;
